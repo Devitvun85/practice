@@ -37,14 +37,45 @@ void main() {
                     //hobby title
                     child:const Text(
                       'My hobbies',
-                      style:TextStyle(color:Colors.white,fontSize:70),
+                      style:TextStyle(color:Colors.white,fontSize:70,),
+                    
                     ),
+                    // vertical space
                   ),
-              
                   // vertical space
-
-
+                const SizedBox(height: 20),
                   //row contain more 2
+                  Row(
+                    children:[
+                      Expanded(
+                        child: Container(
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color:const Color.fromARGB(255, 192, 105, 90),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              'Soccer',
+                              style:TextStyle(color:Colors.white,fontSize:70),
+                            ),
+                          )
+                        ),),
+                      const SizedBox(width: 150),
+                      Expanded(
+                        child: Container(
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color:const Color.fromARGB(255, 206, 106, 24),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: const Center(
+                            child: Text('Flutter',style: TextStyle(color:Colors.white,fontSize:70),)
+                          ),
+
+                        ),),
+                    ]
+                  )
                 ]
               )
             
@@ -56,6 +87,7 @@ void main() {
             height:200,
             color:Colors.amber
           )
+          
           ],
         ),
       ),
